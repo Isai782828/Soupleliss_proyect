@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const year = document.querySelector('#current-year');
 
   // Año y apariencia del encabezado.
-  year.textContent = new Date().getFullYear();
+  if (year) year.textContent = new Date().getFullYear();
   const updateHeader = () => header.classList.toggle('is-scrolled', window.scrollY > 12);
   updateHeader();
   window.addEventListener('scroll', updateHeader, { passive: true });
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // El formulario es una demostración y no transmite datos.
-  form.addEventListener('submit', event => {
+  if (form) form.addEventListener('submit', event => {
     event.preventDefault();
     formMessage.textContent = 'Esta función estará disponible próximamente. El formulario no ha enviado información.';
   });
