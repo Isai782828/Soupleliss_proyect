@@ -156,3 +156,14 @@ h1 em,h2 em{font-weight:400;color:var(--rose-dark)}
 .category-products{background:#fffdfb}
 .category-products .product-grid{max-width:390px}
 .category-page+.site-footer{padding-top:20px}
+
+/* Fotografías PNG originales: envases completos y tarjetas alineadas. */
+.hero-photo{width:100%;max-width:393px;justify-self:center;overflow:hidden;border-radius:160px 160px 12px 12px;background:#e8d8db;box-shadow:var(--shadow)}
+.hero-photo img{display:block;width:100%;height:auto;aspect-ratio:393/550}
+.product-card{display:flex;flex-direction:column;min-width:0}
+.product-photo{height:310px;padding:30px 24px;display:flex;align-items:center;justify-content:center;background:#fff;border-bottom:1px solid var(--line)}
+.product-photo img{display:block;width:auto;height:auto;max-width:100%;max-height:100%;object-fit:contain}
+.product-info{display:flex;flex-direction:column;flex:1}
+.product-info .text-link{align-self:flex-start;margin-top:auto}
+@media(max-width:700px){.hero-photo{margin-top:18px}}
+@media(max-width:520px){.product-photo{height:290px;padding:26px 20px}}
